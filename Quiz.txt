@@ -1,0 +1,33 @@
+1.
+@a = 2 #This is a global variable (or a member variable in a class), and a Fixnum object with value 2   
+user = User.new  #user is a reference pointing to a newly created object of class User
+user.name  #The item 'name' is an attribute of an existing object called user 
+user.name = "Joe" #The statement make user.name reference to a string object
+
+2.
+A class can use keywords include and extend to mixin a module.
+
+3.
+An instance variable is like an attribute of a class. Each instance of the class has their own copies of instance variables, 
+whereas a class variable is only one copy shared by all the instances derived by the class.
+
+4.
+The keyword attr_accessor provides both getter and setter methods for a specific instance variable.
+
+5.
+The method some_method is a maxin of the class Dog.
+
+6.
+Mixing in modules do not have to inherit classes, which are easy to integrating existing methods into different class. However, 
+subclassing can retrieve the attributes of the base class, which are convenient to share common information.
+
+7.
+class User
+  def initialize new_name
+    @name = new_name
+  end
+end 
+
+8. Yes, only if the instance is passed as parameter to the method.
+
+9. I will make statements comments until the error no longer appears. Next, I will remove the comment one by one until the error is shown again. 
